@@ -9,22 +9,63 @@
     <style>
         :root{
             --bg-color: #3b3b3b;
+
+            --font-familly-one: Verdana;
+            --font-weight-one: 500;
+
+            --font-familly-two: Arial;
+            --font-weight-two: 100;
+            --font-size-two: 3em;
+
         }
         body{
             background-color: var(--bg-color);
         }
+        .h1-title{
+            font-weight: var(--font-weight-one);
+        }
+        .p-subtitle{
+            font-family: var(--font-familly-two);
+            font-weight: var(--font-weight-two);
+            font-size: var(--font-size-two);
+        }
         
     </style>
 
-  </head>
+  </head> 
   <body>
+    <!-- Nav bar -->
+    <div class="navbar fixed-top">
+        <div class="navbar-brand fs-4 mx-5 text-light">Davi Pinheiro de Souza</div>
+        <ul class=" nav nav-underline justify-content-end mx-5 my-4">
+            <li class="nav-item mx-2">
+                <a class="navbar-brand fs-4 text-light" href="#">Sobre</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="navbar-brand fs-4 text-light" href="#">Tecnologias</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="navbar-brand fs-4 text-light" href="#">Histórico</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="navbar-brand fs-4 text-light" href="#">Projetos</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="navbar-brand fs-4 text-light" href="#">Contato</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="navbar-brand fs-4 text-light" href="#">Links</a>
+            </li>
+        </ul>
+    </div>
     <!-- Backgraund image Waves -->
     <div class="position-relative">
         <div class="bg-image opacity-50 fixed-top" style="background-image: url('images/waves.jpg'); height: 100vh;z-index: -1;"></div>
     </div>
+    <!-- Nome e Subtitulo -->
     <div class="d-flex flex-column text-center justify-content-center" style="height: 100vh;">
-        <h1 class="display-1">Davi Pinheiro de Souza</h1>
-        <p>Desenvolvedor Front-End</p>
+        <h1 class="display-1 h1-title text-white">Davi Pinheiro de Souza</h1>
+        <p class="fs-1 text-white" >Desenvolvedor Front-End</p>
     </div>
 
 
