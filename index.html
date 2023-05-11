@@ -39,7 +39,7 @@
         }
         [data-anime].animated{
             opacity: 1;
-            transform: translate3d(0, 0, 0);
+            
         }
         .alt-nav{
             height: 5em;
@@ -50,20 +50,26 @@
   <body>
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <!-- Botão Hamburguer -->
         <button class="navbar-toggler mx-3 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Nome e Logo -->
         <div class="d-flex align-items-center navbar-brand fs-5">
             <img class="mx-2 navbar-brande" style="width: 1.5em; height: 1.3em;" src="images/bootstrap logo.png" alt="Bootstrap logo">
             <p class="my-1">Davi Pinheiro de Souza</p>
         </div>
+        <!-- Opções da Navbar -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-5 my-4 ms-auto" >
+                <li class="nav-item mx-4">
+                    <a class="navbar-brand fs-5 text-light" href="#Home">Home</a>
+                </li>
                 <li class="nav-item mx-4">
                     <a class="navbar-brand fs-5 text-light" href="#Sobre">Sobre</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="navbar-brand fs-5 text-light" href="#">Tecnologias</a>
+                    <a class="navbar-brand fs-5 text-light" href="#Tecnologias">Tecnologias</a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="navbar-brand fs-5 text-light" href="#">Histórico</a>
@@ -81,8 +87,8 @@
         </div>
     </nav>
     <!-- Backgraund image Waves -->
-    <div class="position-relative">
-        <div class="bg-image opacity-25 fixed-top" style="background-image: url('images/waves.jpg'); height: 100vh;z-index: -1;"></div>
+    <div class="position-relative container-fluid" id="Home">
+        <div class="img-fluid opacity-25 fixed-top" style="background-image: url('images/waves.jpg');height: 100vh; z-index: -1; background-repeat: no-repeat;"></div>
     </div>
     <!-- Nome e Subtitulo -->
     <div class="d-flex flex-column text-center justify-content-center" style="height: 100vh;">
@@ -103,29 +109,56 @@
         </div>
     </div>
     <!-- Minhas Tecnologias -->
-    <div class="d-flex flex-row justify-content-center align-items-center p-5" style="height: 100vh; background-color: #6e6e6e;" id="Sobre">
-        <div class="mx-5" data-anime= "up">
-            <h2>Minhas</h2>
-            <h2 class="ms-5">Tecnologias</h2>
-        </div>
-        <div class="mx-5" data-anime= "up">
-            <div 
-            class="bg-warning opacity-25" 
-            style="width: 25em; height: 13em; border-radius: 50%; filter:blur(1em)"></div>
-            <div 
-            class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-light rounded-circle shadow" 
-            style="height:6em;width: 6em;">
-                <img class="img-fluid rounded" style="height:4em;"src="images/figma.png" alt="">
-            </div>
-            <div 
-            class="position-absolute top-0 start-50 translate-middle d-flex align-items-center justify-content-center bg-light rounded-circle shadow" 
-            style="height:6em;width: 6em;">
-                <img class="img-fluid rounded" style="height:4em;"src="images/figma.png" alt="">
+    <div class="d-flex flex-row justify-content-center align-items-center p-5" style="height: 100vh; background-color: #6e6e6e;" id="Tecnologias;">
+        <div class="mx-5" style="height:30em;" data-anime= "up">
+            <h2 class="text-dark fs-1 "><strong>Minhas</strong></h2>
+            <div class="ms-5 px-3 py-1 rounded bg-dark">
+                <h2 class="text-warning fs-1">Tecnologias</h2>
             </div>
         </div>
+        <div id="carouselExample" class="carousel slide w-50">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="images/azure.png" class="mx-auto d-block" style="height: 250px;" alt="Azure Data Studio">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/css.png" class="mx-auto d-block" style="height: 250px;" alt="CSS">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/dart.png" class="mx-auto d-block" style="height: 250px;" alt="Dart">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/figma.png" class="mx-auto d-block" style="height: 250px;" alt="Figma">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gimp.png" class="mx-auto d-block" style="height: 250px;" alt="Gimp">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/html.png" class="mx-auto d-block" style="height: 250px;" alt="HTML">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/java.png" class="mx-auto d-block" style="height: 250px;" alt="Java">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/js.png" class="mx-auto d-block" style="height: 250px;" alt="JavaScript">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/python.png" class="mx-auto d-block" style="height: 250px;" alt="Python">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/vscode.png" class="mx-auto d-block" style="height: 250px;" alt="Visual Studio Code">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>        
     </div>
-
-
 
 
 
@@ -164,7 +197,6 @@
                     animeScroll();
                 })
             }
-        
 
     </script>
   </body>
