@@ -434,7 +434,10 @@
     <!-- Projetos -->
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center py-5" style="height: 100vh; background-color: #3b3b3b;" id="Projetos">
         <!-- Titulo da Page -->
-        <h2 class="text-light mt-5 mb-4" data-anime= "up">Meus Projetos</h2>
+        <div class=" mt-5 mb-4">
+            <h2 class="d-inline text-light" data-anime= "up"><strong>Meus</strong></h2>
+            <h2 class="d-inline bg-warning text-dark rounded px-3 py-1" data-anime= "up"><strong>Projetos</strong></h2>
+        </div>
             <div class="container overflow overflow-auto" data-anime= "up">
                 <div class="row my-1">
                     <div class="col my-3">
@@ -592,11 +595,31 @@
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center py-5" style="height: 100vh; background-color: #6e6e6e;" id="Contato">
         <!-- Titulo da Page -->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-light mt-5 mb-4" data-anime= "up">Entre em Contato!</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-4 position-relative" data-anime= "up">
+                    <img class="img-fluid position-relative z-2" src="images/Sky Island.png" alt="Sky Island">
+                    <div class="bg-light translate-middle rounded-circle position-absolute top-50 start-50 z-1" style="height: 20em; width: 20em; filter: blur(5em);"></div>
                 </div>
-            
+                <div class="col-md-4" data-anime= "up">
+                    <div class="row justify-content-end align-items-center">
+                        <h2 class="col-xxl-12 text-light mb-3" data-anime= "up">Entre em Contato!</h2>
+                        <div class="col-md-6" data-anime= "up">
+                            <label class="form-label text-light fs-5" for="email">E-mail Address:</label>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="example@example.com">
+                        </div>
+                        <div class="col-md-6" data-anime= "up">
+                            <label class="form-label text-light fs-5" for="nome">Name:</label>
+                            <input class="form-control" type="text" name="nome" id="nome" placeholder="Davi Pinheiro de Souza">
+                            </div>
+                        <div class="col-md-12" data-anime= "up">
+                            <label class="form-label text-light fs-5" for="mensagem">Menssage:</label>
+                            <textarea class="form-control" id="mensagem" placeholder="HI!!" style="height: 10em;"></textarea>
+                        </div>
+                        <div class="col-md-3 w-auto" data-anime= "up">
+                            <button class="btn btn-outline-warning mt-4 fs-5 px-4">Enviar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
