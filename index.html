@@ -77,6 +77,8 @@
             background: #888;
             border-radius: 10px;
         }
+
+        
         
     </style>
 
@@ -637,27 +639,28 @@
                             
                              Entre em Contato!</h2>
                         <div class="col-md-6" data-anime= "up">
-                            <!-- Label de E-mail -->
-                            <label class="form-label text-light fs-5" for="email">E-mail Address:</label>
-                            <!-- Input do e-mail -->
-                            <input class="form-control" type="email" name="email" id="email" placeholder="example@example.com">
-                        </div>
-                        <div class="col-md-6" data-anime= "up">
                             <!-- Label do Nome -->
                             <label class="form-label text-light fs-5" for="nome">Name:</label>
                             <!-- Input do nome -->
                             <input class="form-control" type="text" name="nome" id="nome" placeholder="Davi Pinheiro de Souza">
-                            </div>
+                        </div>
+                        <div class="col-md-6" data-anime= "up">
+                            <!-- Label do Nome -->
+                            <label class="form-label text-light fs-5" for="assunto">Assunto:</label>
+                            <!-- Input do nome -->
+                            <input class="form-control" type="text" name="assunto" id="assunto" placeholder="Nome da sua empresa...">
+                        </div>
                         <div class="col-md-12" data-anime= "up">
                             <!-- Label da Mensagem -->
                             <label class="form-label text-light fs-5" for="mensagem">Menssage:</label>
                             <!-- Textarea da mensagem -->
-                            <textarea class="form-control" id="mensagem" placeholder="Em breve!!" style="height: 10em;"></textarea>
+                            <textarea class="form-control" id="mensagem" placeholder="Envie sua mensagem!" style="height: 10em;"></textarea>
                         </div>
                         <!-- Botão Enviar -->
                         <div class="col-md-3 w-auto" data-anime= "up">
-                            <button class="btn btn-outline-warning mt-4 fs-5 px-4">Enviar</button>
+                            <a href="" class="btn btn-outline-warning mt-4 fs-5 px-4" id="contato" onclick=email()>Enviar</a>
                         </div>
+                        <div id="liveAlertPlaceholder"></div>
                     </div>
                 </div>
             </div>
@@ -747,6 +750,36 @@
     
     <!-- Script Criado por Davi Pinheiro de Souza -->
     <script>
+        // SCRIPT PARA ENVIAR E-MAIL AUTOMÁTICO
+            function email(){
+                const nome = document.getElementById("nome").value;
+                const assunto = document.getElementById("assunto").value;
+                const mensagem = document.getElementById("mensagem").value;
+
+                const contato = document.getElementById("contato");
+
+                contato.href = `mailto:davipinheiro.dev@gmail.com?subject=${assunto}&body=E-mail from: ${nome}%0D%0DOlá, Davi!%0DMensagem:%0D"${mensagem}".`
+                
+                document.getElementById("nome").value = "";
+                document.getElementById("assunto").value = "";
+                document.getElementById("mensagem").value = "";
+
+                const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                const appendAlert = (message, type) => {
+                const wrapper = document.createElement('div')
+                wrapper.innerHTML = [
+                    `<div class="alert alert-${type} alert-dismissible" role="alert" style="margin-top: 20px;">`,
+                    `   <div>${message}</div>`,
+                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                    '</div>'
+                ].join('')
+
+                alertPlaceholder.append(wrapper)
+                }
+                appendAlert('E-mail enviado com sucesso!', 'success')
+
+            }
+
         // SCRIPT PARA ELEMENTOS DA TELA APARECEREM COM SCROLL DO MOUSE 
 
             // Procura pelos elementos '[data-anime]'
