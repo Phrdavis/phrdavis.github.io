@@ -78,6 +78,50 @@
             border-radius: 10px;
         }
 
+
+
+
+        .container-one{
+            position: relative;
+            width: 300px;
+            height: 250px;
+        }
+        .container-one:hover > .card-one{
+            transform: rotateY(180deg);
+        }
+
+        .card-one{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+
+        .card-one:hover{
+            transform: rotateY(180deg);
+        }
+
+        .front{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 5px;
+        }
+
+        .back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            border-radius: 5px;
+        }
+
+
+
+
         
         
     </style>
@@ -463,157 +507,230 @@
             <h2 class="d-inline text-light" data-anime= "up"><strong>Meus</strong></h2>
             <h2 class="d-inline bg-warning text-dark rounded px-3 py-1" data-anime= "up"><strong>Projetos</strong></h2>
         </div>
-            <div class="container overflow overflow-auto" data-anime= "up">
-                <div class="row my-1 justify-content-center overflow-y overflow">
-                    <div class="col my-3">
-                        <!-- Card Projeto -->
-                        <div class="card bg-dark" style="width: 21em;">
-                            <!-- Foto Card -->
-                            <img class="card-img-top object-fit-cover" style="height: 12em; width: 21em;" src="images/Tela de Auto Atendimento.png" alt="Serviço de Auto Atendimento">
-                            <div class="card-body">
-                                <!-- Titulo Card -->
-                                <h5 class="card-title text-light">Service Management</h5>
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <!-- Tecnologias do Projeto -->
-                                    <div>
-                                        <img class="img" style="height: 2em;" src="images/python.png" alt="Python">
-                                        <img class="img" style="height: 2em;" src="images/gimp.png" alt="Gimp">
-                                        <img class="img" style="height: 2em;" src="images/github.png" alt="Github">
-                                    </div>
-                                    <!-- Botão Acessar Projeto -->
-                                    <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/service_management-main" target="_blank">Github Code</a>
+        <div class="row text-center justify-content-center overflow overflow-auto" data-anime= "up">
+            <div class="col-md-4 container-one m-3">
+                <div class="card-one">
+                    <div class="front card bg-dark">
+                        <!-- Foto Card -->
+                        <img class="card-img-top object-fit-cover" style="height: 10em; width: 100%;" src="images/Tela de Auto Atendimento.png" alt="Serviço de Auto Atendimento">
+                        <div class="card-body">
+                            <!-- Titulo Card -->
+                            <h5 class="card-title text-light">Service Management</h5>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <!-- Tecnologias do Projeto -->
+                                <div>
+                                    <img class="img" style="height: 1.5em;" src="images/python.png" alt="Python">
+                                    <img class="img" style="height: 1.5em;" src="images/gimp.png" alt="Gimp">
+                                    <img class="img" style="height: 1.5em;" src="images/github.png" alt="Github">
                                 </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                    <div class="col my-3">
-                        <!-- Card Projeto -->
-                        <div class="card bg-dark" style="width: 21em;">
-                            <!-- Foto Card -->
-                            <img class="card-img-top object-fit-cover" style="height: 12em; width: 21em;" src="images/Projeto Netflix 2.png" alt="Netflix App">
-                            <div class="card-body">
-                                <!-- Titulo Card -->
-                                <h5 class="card-title text-light">Netflix App - Redesign</h5>
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <!-- Tecnologias do Projeto -->
-                                    <div>
-                                        <img class="img" style="height: 2em;" src="images/figma.png" alt="Figma">
-                                        <img class="img" style="height: 2em;" src="images/gimp.png" alt="Gimp">
-                                        <img class="img" style="height: 2em;" src="images/behance.png" alt="Behance">
-                                    </div>
-                                    <!-- Botão Acessar Projeto -->
-                                    <a class="btn btn-outline-warning" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Behance Project</a>
-                                </div>
+                    <div class="back card bg-dark justify-content-center">
+                        <div class="row p-3 h-100 justify-content-center align-items-end">
+                            <!-- Titulo Card -->
+                            <h5 class="col-12 card-title text-light">Service Management</h5>
+                            <!-- Descrição Card -->
+                            <p class="col-12 text-light">Sistema de gerenciamento de filas de auto atendimento para geração de senhas</p>
+                            <!-- Botão Acessar Projeto -->
+                            <div class="col-12">
+                                <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/service_management-main" target="_blank">Github Code</a>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col my-3">
-                        <!-- Card Projeto -->
-                        <div class="card bg-dark" style="width: 21em;">
-                            <!-- Foto Card -->
-                            <img class="card-img-top object-fit-cover" style="height: 12em; width: 21em;" src="images/Loda.png" alt="Loda App">
-                            <div class="card-body">
-                                <!-- Titulo Card -->
-                                <h5 class="card-title text-light">Loda Bank - App</h5>
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <!-- Tecnologias do Projeto -->
-                                    <div>
-                                        <img class="img" style="height: 2em;" src="images/figma.png" alt="Figma">
-                                        <img class="img" style="height: 2em;" src="images/gimp.png" alt="Gimp">
-                                    </div>
-                                    <!-- Botão Acessar Projeto -->
-                                    <a class="btn btn-outline-warning disabled" href="#" disabled target="_blank">Behance Project</a>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col my-3">
-                        <!-- Card Projeto -->
-                        <div class="card bg-dark" style="width: 21em;">
-                            <!-- Foto Card -->
-                            <img class="card-img-top object-fit-cover" style=" height: 12em; width: 21em;" src="images/code_farmacia.png" alt="SQL Farmacia">
-                            <div class="card-body">
-                                <!-- Titulo Card -->
-                                <h5 class="card-title text-light">SQL - Farmacia</h5>
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <!-- Tecnologias do Projeto -->
-                                    <div>
-                                        <img class="img" style="height: 2em;" src="images/azure.png" alt="Azure Data Studio">
-                                        <img class="img" style="height: 2em;" src="images/github.png" alt="Github">
-                                    </div>
-                                    <!-- Botão Acessar Projeto -->
-                                    <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/SQL_Farmacia" target="_blank">Github Code</a>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col my-3">
-                        <!-- Card Projeto -->
-                        <div class="card bg-dark" style="width: 21em;">
-                            <!-- Foto Card -->
-                            <img class="card-img-top object-fit-cover" style="height: 12em; width: 21em;" src="images/code_ppt.png" alt="Pedra Papel ou Tesoura">
-                            <div class="card-body">
-                                <!-- Titulo Card -->
-                                <h5 class="card-title text-light">Pedra, Papel ou Tesoura</h5>
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <!-- Tecnologias do Projeto -->
-                                    <div>
-                                        <img class="img" style="height: 2em;" src="images/python.png" alt="Python">
-                                        <img class="img" style="height: 2em;" src="images/vscode.png" alt="Visual Studio Code">
-                                        <img class="img" style="height: 2em;" src="images/github.png" alt="Github">
-                                    </div>
-                                    <!-- Botão Acessar Projeto -->
-                                    <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/rock-paper-scissors" target="_blank">Github Code</a>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col my-3">
-                        <!-- Card Projeto -->
-                        <div class="card bg-dark" style="width: 21em;">
-                            <!-- Foto Card -->
-                            <img class="card-img-top object-fit-cover" style="height: 12em; width: 21em;" src="images/cupom fiscal.png" alt="Cupom Fiscal">
-                            <div class="card-body">
-                                <!-- Titulo Card -->
-                                <h5 class="card-title text-light">Tax Cupom Issuer</h5>
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <!-- Tecnologias do Projeto -->
-                                    <div>
-                                        <img class="img" style="height: 2em;" src="images/python.png" alt="Python">
-                                        <img class="img" style="height: 2em;" src="images/vscode.png" alt="Visual Studio Code">
-                                        <img class="img" style="height: 2em;" src="images/github.png" alt="Github">
-                                    </div>
-                                    <!-- Botão Acessar Projeto -->
-                                    <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/tax_coupon_issuer" target="_blank">Github Code</a>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col my-3">
-                        <!-- Card Projeto -->
-                        <div class="card bg-dark" style="width: 21em;">
-                            <!-- Foto Card -->
-                            <img class="card-img-top object-fit-cover" style="height: 12em; width: 21em;" src="images/Site Portifólio.png" alt="Portifólio V1.0">
-                            <div class="card-body">
-                                <!-- Titulo Card -->
-                                <h5 class="card-title text-light">Portifólio V1.0</h5>
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <!-- Tecnologias do Projeto -->
-                                    <div>
-                                        <img class="img" style="height: 2em;" src="images/html.png" alt="HTML">
-                                        <img class="img" style="height: 2em;" src="images/css.png" alt="CSS">
-                                        <img class="img" style="height: 2em;" src="images/js.png" alt="JavaScript">
-                                        <img class="img" style="height: 2em;" src="images/vscode.png" alt="Visual Studio Code">
-                                        <img class="img" style="height: 2em;" src="images/github.png" alt="Github">
-                                    </div>
-                                    <!-- Botão Acessar Projeto -->
-                                    <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/Portifolio-1.0" target="_blank">Github Code</a>
-                                </div>
-                            </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 container-one m-3">
+                <div class="card-one">
+                    <div class="front card bg-dark">
+                        <!-- Foto Card -->
+                        <img class="card-img-top object-fit-cover" style="height: 10em; width: 100%;" src="images/Projeto Netflix 2.png" alt="Netflix app">
+                        <div class="card-body">
+                            <!-- Titulo Card -->
+                            <h5 class="card-title text-light">Netflix-App-Redesign</h5>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <!-- Tecnologias do Projeto -->
+                                <div>
+                                    <img class="img" style="height: 1.5em;" src="images/figma.png" alt="Figma">
+                                    <img class="img" style="height: 1.5em;" src="images/gimp.png" alt="Gimp">
+                                    <img class="img" style="height: 1.5em;" src="images/behance.png" alt="Behance">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back card bg-dark justify-content-center">
+                        <div class="row p-3 h-100 justify-content-center align-items-end">
+                            <!-- Titulo Card -->
+                            <h5 class="col-12 card-title text-light">Netflix-App-Redesign</h5>
+                            <!-- Descrição Card -->
+                            <p class="col-12 text-light">Um novo design para o aplicativo Netflix, utilizando o programa Figma.</p>
+                            <!-- Botão Acessar Projeto -->
+                            <div class="col-12">
+                                <a class="btn btn-outline-warning" href="https://www.behance.net/gallery/164514479/Netflix-App-Redesign" target="_blank">Behance Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 container-one m-3">
+                <div class="card-one">
+                    <div class="front card bg-dark">
+                        <!-- Foto Card -->
+                        <img class="card-img-top object-fit-cover" style="height: 10em; width: 100%;" src="images/Loda.png" alt="Loda Bank">
+                        <div class="card-body">
+                            <!-- Titulo Card -->
+                            <h5 class="card-title text-light">Loda Bank - App</h5>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <!-- Tecnologias do Projeto -->
+                                <div>
+                                    <img class="img" style="height: 1.5em;" src="images/figma.png" alt="Figma">
+                                    <img class="img" style="height: 1.5em;" src="images/gimp.png" alt="Gimp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back card bg-dark justify-content-center">
+                        <div class="row p-3 h-100 justify-content-center align-items-end">
+                            <!-- Titulo Card -->
+                            <h5 class="col-12 card-title text-light">Loda Bank - App</h5>
+                            <!-- Descrição Card -->
+                            <p class="col-12 text-light">Um design para um aplicativo Loda Bank - O seu banco amigo. Realizado com o programa Figma</p>
+                            <!-- Botão Acessar Projeto -->
+                            <div class="col-12">
+                                <a class="btn btn-outline-warning disabled" disabled href="#" target="_blank">Behance Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 container-one m-3">
+                <div class="card-one">
+                    <div class="front card bg-dark">
+                        <!-- Foto Card -->
+                        <img class="card-img-top object-fit-cover" style="height: 10em; width: 100%;" src="images/code_farmacia.png" alt="SQL Farmacia">
+                        <div class="card-body">
+                            <!-- Titulo Card -->
+                            <h5 class="card-title text-light">SQL - Farmacia</h5>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <!-- Tecnologias do Projeto -->
+                                <div>
+                                    <img class="img" style="height: 1.5em;" src="images/azure.png" alt="Azure Data Studio">
+                                    <img class="img" style="height: 1.5em;" src="images/github.png" alt="Github">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back card bg-dark justify-content-center">
+                        <div class="row p-3 h-100 justify-content-center align-items-end">
+                            <!-- Titulo Card -->
+                            <h5 class="col-12 card-title text-light">SQL - Farmacia</h5>
+                            <!-- Descrição Card -->
+                            <p class="col-12 text-light">Um codigo SQL para criação de um banco de dados completo para um sistema de Farmácia</p>
+                            <!-- Botão Acessar Projeto -->
+                            <div class="col-12">
+                                <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/SQL_Farmacia" target="_blank">Github Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 container-one m-3">
+                <div class="card-one">
+                    <div class="front card bg-dark">
+                        <!-- Foto Card -->
+                        <img class="card-img-top object-fit-cover" style="height: 10em; width: 100%;" src="images/code_ppt.png" alt="Pedra, Papel ou Tesoura">
+                        <div class="card-body">
+                            <!-- Titulo Card -->
+                            <h5 class="card-title text-light">Pedra, Papel ou Tesoura</h5>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <!-- Tecnologias do Projeto -->
+                                <div>
+                                    <img class="img" style="height: 1.5em;" src="images/python.png" alt="Python">
+                                    <img class="img" style="height: 1.5em;" src="images/vscode.png" alt="Visual Studio Code">
+                                    <img class="img" style="height: 1.5em;" src="images/github.png" alt="Github">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back card bg-dark justify-content-center">
+                        <div class="row p-3 h-100 justify-content-center align-items-end">
+                            <!-- Titulo Card -->
+                            <h5 class="col-12 card-title text-light">Pedra, Papel ou Tesoura</h5>
+                            <!-- Descrição Card -->
+                            <p class="col-12 text-light">Um jogo de Pedra, Papel e Tesoura em linguagem python com interface para jogar contra o programa!</p>
+                            <!-- Botão Acessar Projeto -->
+                            <div class="col-12">
+                                <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/rock-paper-scissors" target="_blank">Github Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 container-one m-3">
+                <div class="card-one">
+                    <div class="front card bg-dark">
+                        <!-- Foto Card -->
+                        <img class="card-img-top object-fit-cover" style="height: 10em; width: 100%;" src="images/cupom fiscal.png" alt="Tax Cupom Issuer">
+                        <div class="card-body">
+                            <!-- Titulo Card -->
+                            <h5 class="card-title text-light">Tax Cupom Issuer</h5>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <!-- Tecnologias do Projeto -->
+                                <div>
+                                    <img class="img" style="height: 1.5em;" src="images/python.png" alt="Python">
+                                    <img class="img" style="height: 1.5em;" src="images/vscode.png" alt="Visual Studio Code">
+                                    <img class="img" style="height: 1.5em;" src="images/github.png" alt="Github">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back card bg-dark justify-content-center">
+                        <div class="row p-3 h-100 justify-content-center align-items-end">
+                            <!-- Titulo Card -->
+                            <h5 class="col-12 card-title text-light">Tax Cupom Issuer</h5>
+                            <!-- Descrição Card -->
+                            <p class="col-12 text-light">Sistema de gerenciamento de mercadorias e lista de compras, gera um cupom fiscal em PDF</p>
+                            <!-- Botão Acessar Projeto -->
+                            <div class="col-12">
+                                <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/tax_coupon_issuer" target="_blank">Github Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 container-one m-3">
+                <div class="card-one">
+                    <div class="front card bg-dark">
+                        <!-- Foto Card -->
+                        <img class="card-img-top object-fit-cover" style="height: 10em; width: 100%;" src="images/Site Portifólio.png" alt="Portifólio V1.0">
+                        <div class="card-body">
+                            <!-- Titulo Card -->
+                            <h5 class="card-title text-light">Portifólio V1.0</h5>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <!-- Tecnologias do Projeto -->
+                                <div>
+                                    <img class="img" style="height: 1.5em;" src="images/python.png" alt="Python">
+                                    <img class="img" style="height: 1.5em;" src="images/gimp.png" alt="Gimp">
+                                    <img class="img" style="height: 1.5em;" src="images/github.png" alt="Github">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back card bg-dark justify-content-center">
+                        <div class="row p-3 h-100 justify-content-center align-items-end">
+                            <!-- Titulo Card -->
+                            <h5 class="col-12 card-title text-light">Portifólio V1.0</h5>
+                            <!-- Descrição Card -->
+                            <p class="col-12 text-light">Meu primeiro Site de Portifólio utilizado anteriormente, criado sem nenhum framework.</p>
+                            <!-- Botão Acessar Projeto -->
+                            <div class="col-12">
+                                <a class="btn btn-outline-warning" href="https://github.com/Phrdavis/Portifolio-1.0" target="_blank">Github Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Contato -->
@@ -738,7 +855,7 @@
                     <a class="d-block text-center text-lg-start text-light link-offset-2 link-underline link-underline-opacity-0" target="_blank" href="https://open.spotify.com/collection/tracks">Spotify</a>
                 </div>
                 <div class="col-lg-12">
-                    <p class="text-light mt-5 text-center">© 2020 Copyright: Davi Pinheiro de Souza</p>
+                    <p class="text-light mt-5 text-center">© 2023 Copyright: Davi Pinheiro de Souza</p>
                 </div>
             </div>
         </div>
