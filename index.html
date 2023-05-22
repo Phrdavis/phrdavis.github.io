@@ -228,7 +228,7 @@
         <!-- Nome -->
         <h1 class="display-1 h1-title text-warning mb-2"><strong>Davi Pinheiro de Souza</strong></h1>
         <!-- Funções -->
-        <p class="display-5 text-light" id="funcs"><small></small>Desenvolvedor Web Junior</p>
+        <p class="display-5 text-light" id="funcs" style="height: 1em"><small></small></p>
     </div>
 
     <!-- Sobre -->
@@ -993,19 +993,31 @@
     <script>
 
         // SCRIPT PARA TROCAR FUNÇÕES NA HOMEPAGE
-        const a = ["Desenvolvedor Python Junior","Front-End","Desenvolvedor UI Design Junior","Suporte em TI","Desenvolvedor Web Junior"]
+        const a = ["Desenvolvedor Python Junior","Front-End","UI Design Junior","Suporte em TI","Desenvolvedor Web Junior"]
+        
+
         const funcs = document.getElementById("funcs");
         var i = 0;
-        setInterval(() => {
-            funcs.innerHTML = a[i];
-            console.log(a[i])
+        var j = 0;
 
-            if(i >= a.length - 1){
-                i = 0
+        setInterval(() =>{
+            var palavra = a[i].split("")
+            funcs.innerHTML += palavra[j];
+
+            if(j >= palavra.length){
+                funcs.innerHTML = " ";
+                
+                if(i < a.length-1){
+                    i++;
+                }else{
+                    i = 0;
+                }
+                j = 0;
             }else{
-                i++
+                j++;
             }
-        }, 2000)
+
+        }, 200)
 
         
             
