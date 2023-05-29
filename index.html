@@ -161,6 +161,43 @@
             transition: all 0.3s ease;
             color: #ecb41a;
         }
+
+
+
+        .teste{
+            transition: all 0.3s;
+            animation: waves 20s alternate infinite;
+        }
+        .teste1{
+            transition: all 0.3s;
+            opacity: 75%;
+            animation: waves 20s alternate-reverse infinite;
+        }
+        .teste2{
+            transition: all 0.3s;
+            opacity: 50%;
+            animation: waves 16s alternate infinite;
+        }
+        .teste3{
+            transition: all 0.3s;
+            opacity: 25%;
+            animation: waves 16s alternate-reverse infinite;
+        }
+
+        @keyframes waves {
+            25%{
+                transform: translate3d(50%, 0px,0);
+            }
+            50%{
+                transform: translate3d(-50%, 0px,0);
+            }
+            75%{
+                transform: translate3d(50%, 0px,0);
+            }
+            100%{
+                transform: translate3d(-50%, 0px,0);
+            }
+        }
         
     </style>
 
@@ -843,7 +880,7 @@
     </div>
 
     <!-- Contato -->
-    <div class="container-fluid d-flex flex-column align-items-center justify-content-center py-5" style="height: 100vh; background-color: #6e6e6e;" id="Contato">
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden py-5" style="height: 100vh; background-color: #6e6e6e;" id="Contato">
         <!-- Titulo da Page -->
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center">
@@ -891,10 +928,14 @@
                 </div>
             </div>
         </div>
+        <img class="img img-fluid position-absolute teste" style="bottom: 0%;" src="images/Union.png" alt="wave">
+        <img class="img img-fluid position-absolute teste1" style="bottom: 0%;" src="images/Union.png" alt="wave">
+        <img class="img img-fluid position-absolute teste2" style="bottom: 0%;" src="images/Union.png" alt="wave">
+        <img class="img img-fluid position-absolute teste3" style="bottom: 0%;" src="images/Union.png" alt="wave">
     </div>
-
     <!-- Links Footer -->
     <footer class="container-fluid d-flex flex-column align-items-center justify-content-center px-5 py-2" style="background-color: #3b3b3b;" id="Links">
+        
         <div class="container">
             <div class="row justify-content-between align-items-top">
                 <!-- Redes Sociaos -->
@@ -993,38 +1034,38 @@
     <script>
 
         // SCRIPT PARA TROCAR FUNÇÕES NA HOMEPAGE
-        const a = ["Front-End","Desenvolvedor Python Junior","UI Design Junior","Suporte em TI","Desenvolvedor Web Junior"]
-        
+            const a = ["Front-End","Desenvolvedor Python Junior","UI Design Junior","Suporte em TI","Desenvolvedor Web Junior"]
+            
 
-        const funcs = document.getElementById("funcs");
-        var i = 0; //Cada Frases
-        var j = 0; //Cada Letra
-        var intervalo = 150; //Definindo variavel para o intervalo
+            const funcs = document.getElementById("funcs");
+            var i = 0; //Cada Frases
+            var j = 0; //Cada Letra
+            var intervalo = 150; //Definindo variavel para o intervalo
 
 
-        // Executa a função em determinado intervalo
-        setInterval(() =>{
-            // Seleciona uma frase para a variavel
-            var palavra = a[i].split("");
-            // Se a quantidade de Letras acabar
-            if(j >= palavra.length){
-                // Ao terminar apaga a frase inteira
-                funcs.innerHTML = " ";
-                console.log(document.getElementById("funcs"))
-                
-                if(i < a.length-1){
-                    i++;
+            // Executa a função em determinado intervalo
+            setInterval(() =>{
+                // Seleciona uma frase para a variavel
+                var palavra = a[i].split("");
+                // Se a quantidade de Letras acabar
+                if(j >= palavra.length){
+                    // Ao terminar apaga a frase inteira
+                    funcs.innerHTML = " ";
+                    console.log(document.getElementById("funcs"))
+                    
+                    if(i < a.length-1){
+                        i++;
+                    }else{
+                        i = 0;
+                    }
+                    j = 0;
                 }else{
-                    i = 0;
+                // Funcs recebe cada letra da variavel com a frase
+                funcs.innerHTML += palavra[j];
+                    j++;
                 }
-                j = 0;
-            }else{
-            // Funcs recebe cada letra da variavel com a frase
-            funcs.innerHTML += palavra[j];
-                j++;
-            }
 
-        }, intervalo)
+            }, intervalo)
 
         
             
