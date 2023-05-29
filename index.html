@@ -883,7 +883,7 @@
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden py-5" style="height: 100vh; background-color: #6e6e6e;" id="Contato">
         <!-- Titulo da Page -->
         <div class="container-fluid">
-            <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center py-5 my-5">
                 <!-- Imagem e Blur de Fundo -->
                 <div class="col-md-4 position-relative" data-anime= "up">
                     <!-- Imagem Low Poly -->
@@ -891,7 +891,7 @@
                     <!-- Circulo de fundo branco para efeito de luz -->
                     <div class="bg-light translate-middle rounded-circle position-absolute top-50 start-50 z-1" style="height: 20em; width: 20em; filter: blur(5em);"></div>
                 </div>
-                <div class="col-md-4" data-anime= "up">
+                <div class="col-md-4" data-anime= "up" style="z-index: 10;">
                     <div class="row justify-content-end align-items-center">
                         <!-- Titulo -->
                         <h2 class="col-xxl-12 text-warning fs-1 mb-3" data-anime= "up">
@@ -928,10 +928,10 @@
                 </div>
             </div>
         </div>
-        <img class="img img-fluid position-absolute teste" style="bottom: 0%;" src="images/Union.png" alt="wave">
-        <img class="img img-fluid position-absolute teste1" style="bottom: 0%;" src="images/Union.png" alt="wave">
-        <img class="img img-fluid position-absolute teste2" style="bottom: 0%;" src="images/Union.png" alt="wave">
-        <img class="img img-fluid position-absolute teste3" style="bottom: 0%;" src="images/Union.png" alt="wave">
+        <img class="img img-fluid position-absolute teste" style="bottom: 0%; z-index: 0;" src="images/Union.png" alt="wave">
+        <img class="img img-fluid position-absolute teste1" style="bottom: 0%; z-index: 0;" src="images/Union.png" alt="wave">
+        <img class="img img-fluid position-absolute teste2" style="bottom: 0%; z-index: 0;" src="images/Union.png" alt="wave">
+        <img class="img img-fluid position-absolute teste3" style="bottom: 0%; z-index: 0;" src="images/Union.png" alt="wave">
     </div>
     <!-- Links Footer -->
     <footer class="container-fluid d-flex flex-column align-items-center justify-content-center px-5 py-2" style="background-color: #3b3b3b;" id="Links">
@@ -1051,7 +1051,6 @@
                 if(j >= palavra.length){
                     // Ao terminar apaga a frase inteira
                     funcs.innerHTML = " ";
-                    console.log(document.getElementById("funcs"))
                     
                     if(i < a.length-1){
                         i++;
@@ -1090,7 +1089,7 @@
                 const appendAlert = (message, type) => {
                 const wrapper = document.createElement('div')
                 wrapper.innerHTML = [
-                    `<div class="alert alert-${type} alert-dismissible" role="alert" style="margin-top: 20px;">`,
+                    `<div class="alert alert-${type} alert-dismissible fixed-bottom" role="alert" style="margin-top: 20px;">`,
                     `   <div>${message}</div>`,
                     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
                     '</div>'
