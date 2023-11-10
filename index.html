@@ -164,21 +164,21 @@
 
 
 
-        .teste{
+        .wave{
             transition: all 0.3s;
             animation: waves 20s alternate infinite;
         }
-        .teste1{
+        .wave1{
             transition: all 0.3s;
             opacity: 75%;
             animation: waves 20s alternate-reverse infinite;
         }
-        .teste2{
+        .wave2{
             transition: all 0.3s;
             opacity: 50%;
             animation: waves 16s alternate infinite;
         }
-        .teste3{
+        .wave3{
             transition: all 0.3s;
             opacity: 25%;
             animation: waves 16s alternate-reverse infinite;
@@ -220,35 +220,10 @@
         </div>
         <!-- Opções da Navbar -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-5 my-4 ms-auto" >
-                <!-- Home -->
-                <li class="nav-item mx-4 hover">
-                    <a class="navbar-brand fs-6 text-light" href="#Home">Home</a>
-                </li>
-                <!-- Sobre -->
-                <li class="nav-item mx-4 hover">
-                    <a class="navbar-brand fs-6 text-light" href="#Sobre">Sobre</a>
-                </li>
-                <!-- Tecnologias -->
-                <li class="nav-item mx-4 hover">
-                    <a class="navbar-brand fs-6 text-light" href="#Tecnologias">Tecnologias</a>
-                </li>
-                <!-- Histórico -->
-                <li class="nav-item mx-4 hover">
-                    <a class="navbar-brand fs-6 text-light" href="#Historico">Histórico</a>
-                </li>
-                <!-- Projetos -->
-                <li class="nav-item mx-4 hover">
-                    <a class="navbar-brand fs-6 text-light" href="#Projetos">Projetos</a>
-                </li>
-                <!-- Contato -->
-                <li class="nav-item mx-4 hover">
-                    <a class="navbar-brand fs-6 text-light" href="#Contato">Contato</a>
-                </li>
-                <!-- Links -->
-                <li class="nav-item mx-4 hover">
-                    <a class="navbar-brand fs-6 text-light" href="#Links">Links</a>
-                </li>
+            <ul class="navbar-nav mx-5 my-4 ms-auto" id="navbar">
+               
+                <!-- Espaço destinado a inserção de opções da navbar via script -->
+
             </ul>
         </div>
     </nav>
@@ -306,7 +281,6 @@
                     <h1 class="text-warning"  data-anime= "up"><strong>Tecnologias</strong></h1>
                 </div>
             </div>
-            <!-- Carrosel de Tecnologias -->
             <div data-anime= "up" class="d-flex justify-content-center align-items-center bg-secondary-subtle" style="width: 99vw;">
                 <div class="py-5 row g-3 gy-5 justify-content-center align-items-center" id="tecs" data-anime= "up">
 
@@ -322,7 +296,7 @@
         <!-- Titulo -->
         <h1 class="text-light mt-5" data-anime= "up">Histórico</h1>
             <div class="row overflow my-5" data-anime= "up">
-                <div class="col-md-8 mb-5" data-anime= "up">
+                <div class="col-md-6 mb-5" data-anime= "up">
                     <!-- Espaço para Cursos em geral -->
                     <h4 class="text-light ms-5" style="font-weight: 500;" data-anime= "up">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code-slash mb-1" viewBox="0 0 16 16">
@@ -330,131 +304,15 @@
                         </svg>
                          Cursos</h4>
                     <!-- Alinhando todos em coluna -->
-                    <div class="container-fluid" data-anime= "up">
-                        <!-- Ordenando os elementos com as informações lada a lado -->
-                        <div class="row ladin">
-                            <div class="col-2" data-anime= "up">
-                                <!-- Ordenando elementos visuais em coluna -->
-                                <div class="mt-4 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Circulo Externo -->
-                                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle" style="width: 1.5em; height: 1.5em;">
-                                        <!-- Ciruclo Interno -->
-                                        <div class="rounded-circle" style="width: 1em; height: 1em; background-color: #3b3b3b;"></div>
-                                    </div>
-                                    <!-- Traço a baixo dos circulos -->
-                                    <div class="my-2 bg-warning rounded-pill" style="height: 4em; width: 0.4em;"></div>
-                                </div>
-                            </div>
-                            <!-- Informações do Curso -->
-                            <div class="col-8 my-2 bg-dark rounded p-3">
-                                <h4 class="text-warning">Curso de Python 3</h4>
-                                <p class="text-light mb-0">40 horas</p>
-                                <p class="text-light">Curso em Vídeo</p>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <!--  -->
-                        <!--  -->
-                        <!-- DIVISÃO DE CURSOS -->
-                        <div class="row ladin">
-                            <div class="col-2" data-anime= "up">
-                                <!-- Ordenando elementos visuais em coluna -->
-                                <div class="mt-4 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Circulo Externo -->
-                                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle" style="width: 1.5em; height: 1.5em;">
-                                        <!-- Ciruclo Interno -->
-                                        <div class="rounded-circle" style="width: 1em; height: 1em; background-color: #3b3b3b;"></div>
-                                    </div>
-                                    <!-- Traço a baixo dos circulos -->
-                                    <div class="my-2 bg-warning rounded-pill" style="height: 4em; width: 0.4em;"></div>
-                                </div>
-                            </div>
-                            <!-- Informações do Curso -->
-                            <div class="col-8 my-2 bg-dark rounded p-3">
-                                <h4 class="text-warning">Curso de Python 3</h4>
-                                <p class="text-light mb-0">40 horas</p>
-                                <p class="text-light">Curso em Vídeo</p>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <!--  -->
-                        <!--  -->
-                        <!-- DIVISÃO DE CURSOS -->
-                        <div class="row ladin">
-                            <div class="col-2" data-anime= "up">
-                                <!-- Ordenando elementos visuais em coluna -->
-                                <div class="mt-4 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Circulo Externo -->
-                                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle" style="width: 1.5em; height: 1.5em;">
-                                        <!-- Ciruclo Interno -->
-                                        <div class="rounded-circle" style="width: 1em; height: 1em; background-color: #3b3b3b;"></div>
-                                    </div>
-                                    <!-- Traço a baixo dos circulos -->
-                                    <div class="my-2 bg-warning rounded-pill" style="height: 4em; width: 0.4em;"></div>
-                                </div>
-                            </div>
-                            <!-- Informações do Curso -->
-                            <div class="col-8 my-2 bg-dark rounded p-3">
-                                <h4 class="text-warning">Curso de HTML e CSS</h4>
-                                <p class="text-light mb-0">40 horas</p>
-                                <p class="text-light">Curso em Vídeo</p>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <!--  -->
-                        <!--  -->
-                        <!-- DIVISÃO DE CURSOS -->
-                        <div class="row ladin">
-                            <div class="col-2" data-anime= "up">
-                                <!-- Ordenando elementos visuais em coluna -->
-                                <div class="mt-4 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Circulo Externo -->
-                                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle" style="width: 1.5em; height: 1.5em;">
-                                        <!-- Ciruclo Interno -->
-                                        <div class="rounded-circle" style="width: 1em; height: 1em; background-color: #3b3b3b;"></div>
-                                    </div>
-                                    <!-- Traço a baixo dos circulos -->
-                                    <div class="my-2 bg-warning rounded-pill" style="height: 4em; width: 0.4em;"></div>
-                                </div>
-                            </div>
-                            <!-- Informações do Curso -->
-                            <div class="col-8 my-2 bg-dark rounded p-3">
-                                <h4 class="text-warning">Curso de Operador de Comp.</h4>
-                                <p class="text-light">YesBras</p>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <!--  -->
-                        <!--  -->
-                        <!-- DIVISÃO DE CURSOS -->
-                        <div class="row ladin">
-                            <div class="col-2" data-anime= "up">
-                                <!-- Ordenando elementos visuais em coluna -->
-                                <div class="mt-4 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Circulo Externo -->
-                                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle" style="width: 1.5em; height: 1.5em;">
-                                        <!-- Ciruclo Interno -->
-                                        <div class="rounded-circle" style="width: 1em; height: 1em; background-color: #3b3b3b;"></div>
-                                    </div>
-                                    <!-- Traço a baixo dos circulos -->
-                                    <div class="my-2 bg-warning rounded-pill" style="height: 4em; width: 0.4em;"></div>
-                                </div>
-                            </div>
-                            <!-- Informações do Curso -->
-                            <div class="col-8 my-2 bg-dark rounded p-3">
-                                <h4 class="text-warning">Curso de Inglês Int.</h4>
-                                <p class="text-light">Influx - English School</p>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <!--  -->
-                        <!--  -->
-                        <!-- DIVISÃO DE CURSOS -->
+                    <div class="container-fluid" id="curso" data-anime= "up">
+                    
+                        <!-- Espaço destinado a inserção de cursos via script -->
+                    
                     </div>
                 </div>
 
                 <!-- Acadêmico -->
-                <div class="col-md-4 mb-5" data-anime= "up">
+                <div class="col-md-6 mb-5" data-anime= "up">
                     <!-- Espaço para Cursos em geral -->
                     <h4 class="text-light ms-3" style="font-weight: 500;" data-anime= "up">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pen mb-1" viewBox="0 0 16 16">
@@ -462,58 +320,10 @@
                         </svg>
                          Acadêmico</h4>
                     <!-- Alinhando todos em coluna -->
-                    <div class="container-fluid" data-anime= "up">
-                        <!-- Ordenando os elementos com as informações lada a lado -->
-                        <div class="row ladin">
-                            <div class="col-2" data-anime= "up">
-                                <!-- Ordenando elementos visuais em coluna -->
-                                <div class="mt-4 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Circulo Externo -->
-                                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle" style="width: 1.5em; height: 1.5em;">
-                                        <!-- Ciruclo Interno -->
-                                        <div class="rounded-circle" style="width: 1em; height: 1em; background-color: #3b3b3b;"></div>
-                                    </div>
-                                    <!-- Traço a baixo dos circulos -->
-                                    <div class="my-2 bg-warning rounded-pill" style="height: 10em; width: 0.4em;"></div>
-                                </div>
-                            </div>
-                            <!-- Informações do Curso -->
-                            <div class="col-8 my-2 bg-dark rounded p-3">
-                                <h4 class="text-warning">Engenharia de Software</h4>
-                                <p class="text-light mt-4 mb-0">Bacharel</p>
-                                <p class="text-light mb-0">Mar. de 2022 - Jul. de 2026</p>
-                                <p class="text-light">Univille - Universidade da Região de Joinville</p>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <!--  -->
-                        <!--  -->
-                        <!-- DIVISÃO DE CURSOS -->
-                        <div class="row ladin">
-                            <div class="col-2" data-anime= "up">
-                                <!-- Ordenando elementos visuais em coluna -->
-                                <div class="mt-4 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Circulo Externo -->
-                                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle" style="width: 1.5em; height: 1.5em;">
-                                        <!-- Ciruclo Interno -->
-                                        <div class="rounded-circle" style="width: 1em; height: 1em; background-color: #3b3b3b;"></div>
-                                    </div>
-                                    <!-- Traço a baixo dos circulos -->
-                                    <div class="my-2 bg-warning rounded-pill" style="height: 10em; width: 0.4em;"></div>
-                                </div>
-                            </div>
-                            <!-- Informações do Curso -->
-                            <div class="col-8 my-2 bg-dark rounded p-3">
-                                <h4 class="text-warning">Técnico em Automação Industrial</h4>
-                                <p class="text-light mt-4 mb-0">Técnico</p>
-                                <p class="text-light mb-0">Fev. de 2018 - Dez. de 2020</p>
-                                <p class="text-light">IFC - Instituto Federal Catarinense - Campus São Francisco do Sul</p>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <!--  -->
-                        <!--  -->
-                        <!-- DIVISÃO DE CURSOS -->
+                    <div class="container-fluid" id="academico" data-anime= "up">
+                        
+                        <!-- Espaço destinado a inserção dos cursos via script -->
+
                     </div>
                 </div>
             </div>
@@ -529,32 +339,8 @@
              Experiência Profissional</h2>
         <div class="container">
             <!-- Conjunto de Exp. -->
-            <div class="row align-items-center justify-content-around">     
-                <!-- Primeiro Trabalho -->
-                <div class="col-lg-4 my-4 bg-dark rounded p-4 tremidinha" data-anime= "up">
-                    <!-- Função -->
-                    <h4 class="text-warning mb-0">Estagiário de Suporte em T.I</h4>
-                    <!-- Inicio - Final -->
-                    <p class="text-light mb-0">Ago. de 2021 - Ago. de 2023</p>
-                    <!-- Local -->
-                    <p class="text-light">Prefeitura Municipal de São Francisco do Sul</p>
-                    <!-- Função Primaria -->
-                    <p class="text-light" style="text-align: justify;"><strong>- Auxiliar de T.I:</strong> Manutenção de computadores, instalação de maquinas, limpeza de Hardware, instalação e reparo de impressoras proprias e tercerizadas, formatação de sistema operacional Windows 7, 10 e 11, recuperação de dados em HD, auxilio a funcionarios da empressa, abertura e fechamento de chamados.</p>
-                    <!-- Função Secundaria -->
-                    <p class="text-light" style="text-align: justify;"><strong>- Desenvolvedor Python:</strong> Criação de interface gráfica para sistema de auto-atendimento utilizando linguagem Python, modulo Tkinter. (Esta em funcionamento atualmente na empresa).</p>
-
-                </div>
-                <!-- Segundo Emprego -->
-                <div class="col-lg-4 my-4 bg-dark rounded p-4 tremidinha" data-anime= "up">
-                    <!-- Função -->
-                    <h4 class="text-warning mb-0">Programador Front-End</h4>
-                    <!-- Inicio - Final -->
-                    <p class="text-light mb-0">Ago. de 2023 - Atualmente</p>
-                    <!-- Local -->
-                    <p class="text-light">Logimodal Operações Logisticas LTDA</p>
-                    <!-- Função Primaria -->
-                    <p class="text-light" style="text-align: justify;"><strong>- Desenvolvedor Web:</strong> Criação de novas interfaces para sistema web próprio da empresa dentro do setor de PCO (Planejamento e Controle de Operação), manuteção e arquitetura do código, utilizando linguagens HTML, CSS, JavaScript, PHP e banco MySQL. Desenvolvimento e planejamento de documentação de projeto. Criação de telas interativas, dashboards e aplicação de novas funcionalidades ao site</p>
-                </div>
+            <div class="row align-items-center justify-content-around" id="profissional">     
+                
             </div>
         </div>
     </div>
@@ -623,10 +409,11 @@
                 </div>
             </div>
         </div>
-        <img class="img img-fluid position-absolute teste" style="bottom: 0%; z-index: 0;" src="images/Union.png" alt="wave">
-        <img class="img img-fluid position-absolute teste1" style="bottom: 0%; z-index: 0;" src="images/Union.png" alt="wave">
-        <img class="img img-fluid position-absolute teste2" style="bottom: 0%; z-index: 0;" src="images/Union.png" alt="wave">
-        <img class="img img-fluid position-absolute teste3" style="bottom: 0%; z-index: 0;" src="images/Union.png" alt="wave">
+        <div class="w-100" id="waves">
+
+            <!-- Espaço destinado a inserção de animações via script -->
+
+        </div>
     </div>
     <!-- Links Footer -->
     <footer class="container-fluid d-flex flex-column align-items-center justify-content-center px-5 py-2" style="background-color: #3b3b3b;" id="Links">
@@ -726,114 +513,28 @@
     
     <script src="Tecnologia.js"></script>
     <script src="exibeTecnologias.js"></script>
+    
+    <script src="Academico.js"></script>
+    <script src="exibeAcademicos.js"></script>
+    
+    <script src="Curso.js"></script>
+    <script src="exibeCursos.js"></script>
+    
+    <script src="Profissional.js"></script>
+    <script src="exibeProfissionais.js"></script>
 
+    <script src="TrocaFuncs.js"></script>
+    <script src="EnviaEmail.js"></script>
+    <script src="AnimacaoElements.js"></script>
+
+    <script src="AnimacaoWaves.js"></script>
+    <script src="exibeWave.js"></script>
+
+    <script src="OpcoesNav.js"></script>
+    <script src="exibeOpcoes.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
-    <!-- Script Criado por Davi Pinheiro de Souza -->
-    <script>
-
-        // SCRIPT PARA TROCAR FUNÇÕES NA HOMEPAGE
-            const a = ["Front-End", "Back-End","Desenvolvedor Web Junior","Suporte em TI"]
-            
-
-            const funcs = document.getElementById("funcs");
-            var i = 0; //Cada Frases
-            var j = 0; //Cada Letra
-            var intervalo = 150; //Definindo variavel para o intervalo
-
-
-            // Executa a função em determinado intervalo
-            setInterval(() =>{
-                // Seleciona uma frase para a variavel
-                var palavra = a[i].split("");
-                // Se a quantidade de Letras acabar
-                if(j >= palavra.length){
-                    // Ao terminar apaga a frase inteira
-                    funcs.innerHTML = " ";
-                    
-                    if(i < a.length-1){
-                        i++;
-                    }else{
-                        i = 0;
-                    }
-                    j = 0;
-                }else{
-                // Funcs recebe cada letra da variavel com a frase
-                funcs.innerHTML += palavra[j];
-                    j++;
-                }
-
-            }, intervalo)
-
-        
-            
-            
-
-
-        // SCRIPT PARA ENVIAR E-MAIL
-            function email(){
-                const nome = document.getElementById("nome").value;
-                const assunto = document.getElementById("assunto").value;
-                const mensagem = document.getElementById("mensagem").value;
-
-                const contato = document.getElementById("contato");
-
-                contato.href = `mailto:davipinheiro.dev@gmail.com?subject=${assunto}&body=E-mail from: ${nome}%0D%0DOlá, Davi!%0DMensagem:%0D"${mensagem}".`
-                
-                document.getElementById("nome").value = "";
-                document.getElementById("assunto").value = "";
-                document.getElementById("mensagem").value = "";
-
-                const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-                const appendAlert = (message, type) => {
-                const wrapper = document.createElement('div')
-                wrapper.innerHTML = [
-                    `<div class="alert alert-${type} alert-dismissible fixed-bottom" role="alert" style="margin-top: 20px;">`,
-                    `   <div>${message}</div>`,
-                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                    '</div>'
-                ].join('')
-
-                alertPlaceholder.append(wrapper)
-                }
-                appendAlert('E-mail enviado com sucesso!', 'success')
-
-            }
-
-        // SCRIPT PARA ELEMENTOS DA TELA APARECEREM COM SCROLL DO MOUSE 
-
-            // Procura pelos elementos '[data-anime]'
-            const target = document.querySelectorAll('[data-anime]'); 
-            // Cria uma classe 'animated'
-            const animationClass = 'animated';
-
-            function animeScroll(){
-                // Cria variavel para ver localização do Scroll do mouse
-                const windowTop = window.pageYOffset + (window.innerHeight * 3)/4;
-                // Para cada elemento do target execute:
-                target.forEach(function(element){
-                    // Se a localização do scroll for maior que a localização do elemento:
-                    if(windowTop > element.offsetTop){
-                        // Adiciona a classe criada
-                        element.classList.add(animationClass);
-                    }else{
-                        // Remove a classe criada
-                        element.classList.remove(animationClass);
-                    }
-                })
-            }
-
-            // Se existir algum elemento execute:
-            if(target.length){
-                // Adicionando evento listener para scroll do mouse
-                window.addEventListener('scroll', function(){
-                    // Chama a função
-                    animeScroll();
-                })
-            }
-
-    </script>
   </body>
 </html>
