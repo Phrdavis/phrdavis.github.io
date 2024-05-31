@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     
     <!-- Titulo da Pagina -->
     <title>Davi Pinheiro de Souza | Curriculo</title>
@@ -12,194 +13,6 @@
 
     <!-- Icon da Pagina -->
     <link rel="shortcut icon" href="images/peeps-avatar-git.png">
-
-    <!-- CSS do site e personalizações feitas por Davi Pinheiro -->
-    <style>
-        :root{
-            --bg-color-one: #3b3b3b;
-
-            --font-familly-one: Verdana;
-            --font-weight-one: 500;
-
-            --font-familly-two: Arial;
-            --font-weight-two: 100;
-            --font-size-two: 3em;
-
-        }
-        body{
-            background-color: var(--bg-color-one);
-        }
-        .h1-title{
-            font-weight: var(--font-weight-one);
-        }
-        .p-subtitle{
-            font-family: var(--font-familly-two);
-            font-weight: var(--font-weight-two);
-            font-size: var(--font-size-two);
-        }
-        [data-anime]{
-            opacity: 0;
-            transition: 0.3s;
-        }
-        [data-anime = "up"]{
-            transform: translate3d(0, 100px, 0);
-        }
-        [data-anime].animated{
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-            
-        }
-        .alt-nav{
-            height: 5em;
-        }
-
-
-        body::-webkit-scrollbar{
-            width: 10px;
-        }
-        body::-webkit-scrollbar-thumb{
-            background: #888;
-            border-radius: 10px;
-        }
-
-
-
-        .overflow{
-            overflow: auto;
-        }
-        .overflow::-webkit-scrollbar {
-            width: 5px;
-        }
-        .overflow::-webkit-scrollbar-track {
-            background: #f1f1f100;
-        }
-        .overflow::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 10px;
-        }
-
-
-
-
-        .container-one{
-            position: relative;
-            width: 300px;
-            height: 250px;
-        }
-        .container-one:hover > .card-one{
-            transform: rotateY(180deg);
-        }
-
-        .card-one{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transform-style: preserve-3d;
-            transition: all 0.5s ease;
-        }
-
-        .card-one:hover{
-            transform: rotateY(180deg);
-        }
-
-        .front{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 5px;
-        }
-
-        .back{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transform: rotateY(180deg);
-            border-radius: 5px;
-        }
-
-        .tremidinha:hover{
-            animation: tremidinha 0.1s alternate;
-        }
-
-        @keyframes tremidinha{
-
-            0% {
-                transform: rotate(-1deg);
-            }
-            50%{
-                transform: rotate(1deg);
-            }
-            100%{
-                transform: rotate(0deg);
-            }
-
-        }
-
-
-        .ladin{
-            transition: all 0.3s ease;
-        }
-        .ladin:hover{
-            transition: all 0.3s ease;
-            transform: translate3d(50px, 0, 0);
-        }
-
-        .hover{
-            transition: all 0.3s ease;
-        }
-        .hover:hover{
-            transition: all 0.3s ease;
-            opacity: 50%;
-        }
-
-        .hover-warning{
-            transition: all 0.3s ease;
-        }
-        .hover-warning:hover{
-            transition: all 0.3s ease;
-            color: #ecb41a;
-        }
-
-
-
-        .wave{
-            transition: all 0.3s;
-            animation: waves 20s alternate infinite;
-        }
-        .wave1{
-            transition: all 0.3s;
-            opacity: 75%;
-            animation: waves 20s alternate-reverse infinite;
-        }
-        .wave2{
-            transition: all 0.3s;
-            opacity: 50%;
-            animation: waves 16s alternate infinite;
-        }
-        .wave3{
-            transition: all 0.3s;
-            opacity: 25%;
-            animation: waves 16s alternate-reverse infinite;
-        }
-
-        @keyframes waves {
-            25%{
-                transform: translate3d(50%, 0px,0);
-            }
-            50%{
-                transform: translate3d(-50%, 0px,0);
-            }
-            75%{
-                transform: translate3d(50%, 0px,0);
-            }
-            100%{
-                transform: translate3d(-50%, 0px,0);
-            }
-        }
-        
-    </style>
 
   </head> 
   <body>
@@ -508,30 +321,30 @@
         </div>
     </footer>
 
-    <script src="Projeto.js"></script>
-    <script src="exibeProjetos.js"></script>
+    <script src="js/Projeto.js"></script>
+    <script src="js/exibeProjetos.js"></script>
     
-    <script src="Tecnologia.js"></script>
-    <script src="exibeTecnologias.js"></script>
+    <script src="js/Tecnologia.js"></script>
+    <script src="js/exibeTecnologias.js"></script>
     
-    <script src="Academico.js"></script>
-    <script src="exibeAcademicos.js"></script>
+    <script src="js/Academico.js"></script>
+    <script src="js/exibeAcademicos.js"></script>
     
-    <script src="Curso.js"></script>
-    <script src="exibeCursos.js"></script>
+    <script src="js/Curso.js"></script>
+    <script src="js/exibeCursos.js"></script>
     
-    <script src="Profissional.js"></script>
-    <script src="exibeProfissionais.js"></script>
+    <script src="js/Profissional.js"></script>
+    <script src="js/exibeProfissionais.js"></script>
 
-    <script src="TrocaFuncs.js"></script>
-    <script src="EnviaEmail.js"></script>
-    <script src="AnimacaoElements.js"></script>
+    <script src="js/TrocaFuncs.js"></script>
+    <script src="js/EnviaEmail.js"></script>
+    <script src="js/AnimacaoElements.js"></script>
 
-    <script src="AnimacaoWaves.js"></script>
-    <script src="exibeWave.js"></script>
+    <script src="js/AnimacaoWaves.js"></script>
+    <script src="js/exibeWave.js"></script>
 
-    <script src="OpcoesNav.js"></script>
-    <script src="exibeOpcoes.js"></script>
+    <script src="js/OpcoesNav.js"></script>
+    <script src="js/exibeOpcoes.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

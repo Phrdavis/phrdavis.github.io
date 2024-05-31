@@ -1,0 +1,184 @@
+
+:root{
+    --bg-color-one: #3b3b3b;
+
+    --font-familly-one: Verdana;
+    --font-weight-one: 500;
+
+    --font-familly-two: Arial;
+    --font-weight-two: 100;
+    --font-size-two: 3em;
+
+}
+body{
+    background-color: var(--bg-color-one);
+}
+.h1-title{
+    font-weight: var(--font-weight-one);
+}
+.p-subtitle{
+    font-family: var(--font-familly-two);
+    font-weight: var(--font-weight-two);
+    font-size: var(--font-size-two);
+}
+[data-anime]{
+    opacity: 0;
+    transition: 0.3s;
+}
+[data-anime = "up"]{
+    transform: translate3d(0, 100px, 0);
+}
+[data-anime].animated{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    
+}
+.alt-nav{
+    height: 5em;
+}
+
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 10px;
+}
+
+
+
+.overflow{
+    overflow: auto;
+}
+.overflow::-webkit-scrollbar {
+    width: 5px;
+}
+.overflow::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+.overflow::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+
+
+
+.container-one{
+    position: relative;
+    width: 300px;
+    height: 250px;
+}
+.container-one:hover > .card-one{
+    transform: rotateY(180deg);
+}
+
+.card-one{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.card-one:hover{
+    transform: rotateY(180deg);
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+
+.tremidinha:hover{
+    animation: tremidinha 0.1s alternate;
+}
+
+@keyframes tremidinha{
+
+    0% {
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+
+.ladin{
+    transition: all 0.3s ease;
+}
+.ladin:hover{
+    transition: all 0.3s ease;
+    transform: translate3d(50px, 0, 0);
+}
+
+.hover{
+    transition: all 0.3s ease;
+}
+.hover:hover{
+    transition: all 0.3s ease;
+    opacity: 50%;
+}
+
+.hover-warning{
+    transition: all 0.3s ease;
+}
+.hover-warning:hover{
+    transition: all 0.3s ease;
+    color: #ecb41a;
+}
+
+
+
+.wave{
+    transition: all 0.3s;
+    animation: waves 20s alternate infinite;
+}
+.wave1{
+    transition: all 0.3s;
+    opacity: 75%;
+    animation: waves 20s alternate-reverse infinite;
+}
+.wave2{
+    transition: all 0.3s;
+    opacity: 50%;
+    animation: waves 16s alternate infinite;
+}
+.wave3{
+    transition: all 0.3s;
+    opacity: 25%;
+    animation: waves 16s alternate-reverse infinite;
+}
+
+@keyframes waves {
+    25%{
+        transform: translate3d(50%, 0px,0);
+    }
+    50%{
+        transform: translate3d(-50%, 0px,0);
+    }
+    75%{
+        transform: translate3d(50%, 0px,0);
+    }
+    100%{
+        transform: translate3d(-50%, 0px,0);
+    }
+}
