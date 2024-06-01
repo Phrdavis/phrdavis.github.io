@@ -13,7 +13,7 @@ class Projeto{
         // Use join para unir as strings em uma única string
         tecs = tecnologiasHtml.join('');
 
-        divProjetos.innerHTML += `<div class="col-md-4 container-one m-3">
+        divProjetos.innerHTML += `<div class="container-one m-3">
                                     <div class="card-one">
                                         <div class="front card bg-dark">
                                             <!-- Foto Card -->

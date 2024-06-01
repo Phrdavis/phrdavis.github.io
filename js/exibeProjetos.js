@@ -68,4 +68,4 @@ var texto = 'Desenvolvimento de Telas e interfaces para sistema web da empresa L
 
 
 //                  imagem, titulo, tecnologias, texto, link, status
-projeto.exibeProjeto("logimodal", "SaLog", tecnologias, texto, '#', 'disabled');
+projeto.exibeProjeto("logimodal", "SaLog", tecnologias, texto, 'https://operacional.logimodal.com.br', 'disabled');
