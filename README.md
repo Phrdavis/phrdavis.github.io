@@ -12,10 +12,10 @@ Up to this moment, my portfolio is officially finalized, so it will only be upda
 ## Referências
 
 Imagens:
-https://br.pinterest.com/
+[Pinterest](https://br.pinterest.com/)
   
 Icones: 
- https://icons.getbootstrap.com/ 
- https://skillicons.dev
+[Bootstrap Icons](https://icons.getbootstrap.com/)
+[Skill Icons](https://skillicons.dev)
 
 
