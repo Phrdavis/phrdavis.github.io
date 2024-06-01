@@ -1,6 +1,13 @@
 
         // SCRIPT PARA TROCAR FUNÇÕES NA HOMEPAGE
-        const a = ["Front-End", "Back-End","Desenvolvedor Web Junior","Suporte em TI"]
+        const a = [
+
+            "Front-End", 
+            "Back-End",
+            "Desenvolvedor Web Junior",
+            "Suporte em TI"
+            
+        ]
             
 
         const funcs = document.getElementById("funcs");

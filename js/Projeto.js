@@ -27,7 +27,7 @@ class Projeto{
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="back card bg-dark justify-content-center">
+                                        <div class="back bg-dark justify-content-center">
                                             <div class="row p-3 h-100 justify-content-center align-items-end">
                                                 <!-- Titulo Card -->
                                                 <h5 class="col-12 card-title text-light">${titulo}</h5>
