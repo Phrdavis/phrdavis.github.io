@@ -10,6 +10,7 @@ tecnologia.exibeTecnologia('js');
 tecnologia.exibeTecnologia('php logo');
 tecnologia.exibeTecnologia('gimp');
 tecnologia.exibeTecnologia('java');
+tecnologia.exibeTecnologia('csharp');
 tecnologia.exibeTecnologia('springboot');
 tecnologia.exibeTecnologia('python');
 tecnologia.exibeTecnologia('vscode');
