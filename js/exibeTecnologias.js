@@ -14,3 +14,4 @@ tecnologia.exibeTecnologia('csharp');
 tecnologia.exibeTecnologia('springboot');
 tecnologia.exibeTecnologia('python');
 tecnologia.exibeTecnologia('vscode');
+tecnologia.exibeTecnologia('figma');
