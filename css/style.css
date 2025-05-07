@@ -10,8 +10,12 @@
     --font-size-two: 3em;
 
 }
+*{
+    font-family: Lexend;
+}
 body{
     background-color: var(--bg-color-one);
+    overflow-x: hidden;
 }
 .h1-title{
     font-weight: var(--font-weight-one);

@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     
     <!-- Titulo da Pagina -->
     <title>Davi Pinheiro | Web Developer</title>
@@ -18,16 +21,12 @@
   <body>
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
-        <!-- Botão Hamburguer -->
         <button class="navbar-toggler mx-3 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Nome e Logo -->
         <div class="d-flex align-items-center navbar-brand fs-6 hover-warning">
-            <!-- Nome -->
             <p class="mx-3 m-2">Davi Pinheiro de Souza</p>
         </div>
-        <!-- Opções da Navbar -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-5 my-4 ms-auto" id="navbar">
                
@@ -37,22 +36,28 @@
         </div>
     </nav>
 
-    <!-- Backgraund image Waves -->
-    <div class="position-relative container-fluid" id="Home">
-        <!-- Imagem de Fundo sem repetição -->
-        <div class="img-fluid opacity-75 fixed-top" style="background-image: url('images/waves3.jpg');height: auto; min-height: 100vh; z-index: -1; background-repeat: no-repeat;"></div>
-    </div>
-
-    <!-- Nome e Subtitulo -->
-    <div class="d-flex flex-column text-center justify-content-center" style="height: auto; min-height: 100vh;">
-        <!-- Nome -->
-        <h1 class="display-4 h1-title text-warning mb-2"><strong>Davi Pinheiro de Souza</strong></h1>
-        <!-- Funções -->
-        <p class="fs-3 text-light" id="funcs" style="height: 1em"><small></small></p>
+    <div class="d-flex text-start align-items-center justify-content-center" style="background-color: #212529; height: auto; min-height: 100vh;">
+        <!-- <h1 class="display-4 h1-title text-warning mb-2"><strong>Davi Pinheiro de Souza</strong></h1>
+        <p class="fs-3 text-light" id="funcs" style="height: 1em"><small></small></p> -->
+        <div style="max-width: 40em;">
+            <p class="text-light mb-0" style="font-family: Lexend; font-size: 20px;">Hello, I am</p>
+            <p class="text-light" style="font-family: Lexend; font-weight: 900; font-size: 50px;">DAVI P. DE SOUZA</p>
+            <div>
+                <p class="text-warning mb-1" style="font-family: Lexend; font-size: 20px;">And I am a Web Developer</p>
+                <p class="text-light mb-0 opacity-50" style="font-family: Lexend; font-size: 15px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a neque turpis. Nam eu feugiat dolor. Sed nec hendrerit urna, nec fringilla odio. Duis nec orci justo. </p>
+            </div>
+        </div>
+        <div class="position-relative ms-5 mt-4">
+            <div style="width: 20em; height: 100%;">
+                <div class="bg-warning rounded-circle opacity-100 position-absolute translate-middle start-50" style="width: 20em; height: 20em; top: -10em;"></div>
+                <div class="bg-warning rounded-circle opacity-75  position-absolute translate-middle start-50" style="width: 20em; height: 20em; top: 0em;"></div>
+                <div class="bg-warning rounded-circle opacity-50  position-absolute translate-middle start-50" style="width: 20em; height: 20em; top: 10em;"></div>
+            </div>
+        </div>
     </div>
 
     <!-- Sobre -->
-    <div class="d-flex align-items-center justify-content-center p-5" style=" background-color: #3b3b3b;" id="Sobre">
+    <div class="d-flex align-items-center justify-content-center p-5" style=" background-color: #212529;" id="Sobre">
         <div class="row align-items-center justify-content-center">
             <!-- Container da Foto -->
             <div class="col-sm-4 m-5 tremidinha" data-anime= "up">
@@ -81,7 +86,7 @@
     </div>
     
     <!-- Minhas Tecnologias -->
-    <div class="d-flex align-items-center justify-content-center  p-5" style="height: auto; min-height: 100vh; background-color: #6e6e6e;" id="Tecnologias">
+    <div class="d-flex align-items-center justify-content-center  p-5" style="height: auto; min-height: 100vh; background-color: #212529;" id="Tecnologias">
         <div>
             <!-- Titulo Formatado -->
             <div class="row mx-5 mb-5 text-center align-items-end justify-content-center">
@@ -101,7 +106,7 @@
     </div>
     
     <!-- Histórico -->
-    <div class="d-flex flex-column align-items-center justify-content-center p-5" style="height: auto; min-height: 100vh; background-color: #3b3b3b;" id="Historico">
+    <div class="d-flex flex-column align-items-center justify-content-center p-5" style="height: auto; min-height: 100vh; background-color: #212529;" id="Historico">
         <!-- Titulo -->
         <h1 class="text-light mt-5" data-anime= "up">Histórico</h1>
             <div class="row overflow my-5" data-anime= "up">
@@ -139,7 +144,7 @@
     </div>
     
     <!-- Exp. Profissional -->
-    <div class="container-fluid d-flex flex-column align-items-center justify-content-center py-5" style="height: auto; min-height: 100vh; background-color: #6e6e6e;">
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center py-5" style="height: auto; min-height: 100vh; background-color: #212529;">
         <!-- Titulo da page -->
         <h2 class="text-light my-5" data-anime= "up">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pc-display mb-1" viewBox="0 0 16 16">
@@ -155,7 +160,7 @@
     </div>
 
     <!-- Projetos -->
-    <div class="container-fluid d-flex flex-column align-items-center justify-content-center py-5" style="height: auto; min-height: auto; min-height: 100vh; background-color: #3b3b3b;" id="Projetos">
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center py-5" style="height: auto; min-height: auto; min-height: 100vh; background-color: #212529;" id="Projetos">
         <!-- Titulo da Page -->
         <div class=" mt-5 mb-4">
             <h2 class="d-inline text-light" data-anime= "up"><strong>Meus</strong></h2>
@@ -170,7 +175,7 @@
     </div>
 
     <!-- Contato -->
-    <div class="container-fluid d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden py-5" style="height: auto; min-height: 100vh; background-color: #6e6e6e;" id="Contato">
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center position-relative overflow-hidden py-5" style="height: auto; min-height: 100vh; background-color: #212529;" id="Contato">
         <!-- Titulo da Page -->
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center py-5 my-5">
@@ -311,7 +316,7 @@
                 </div>
                 <!-- Copyrights -->
                 <div class="col-lg-12">
-                    <p class="text-light mt-5 text-center">© 2023 Copyright: Davi Pinheiro de Souza</p>
+                    <p class="text-light mt-5 text-center">© 2025 Copyright: Davi Pinheiro de Souza</p>
                 </div>
             </div>
         </div>
@@ -332,7 +337,7 @@
     <script src="js/Profissional.js"></script>
     <script src="js/exibeProfissionais.js"></script>
 
-    <script src="js/TrocaFuncs.js"></script>
+    <!-- <script src="js/TrocaFuncs.js"></script> -->
     <script src="js/EnviaEmail.js"></script>
     <script src="js/AnimacaoElements.js"></script>
 
