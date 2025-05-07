@@ -24,11 +24,8 @@
         <button class="navbar-toggler mx-3 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="d-flex align-items-center navbar-brand fs-6 hover-warning">
-            <p class="mx-3 m-2">Davi Pinheiro de Souza</p>
-        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-5 my-4 ms-auto" id="navbar">
+            <ul class="navbar-nav my-4 mx-auto" id="navbar">
                
                 <!-- Espaço destinado a inserção de opções da navbar via script -->
 
@@ -36,52 +33,79 @@
         </div>
     </nav>
 
-    <div class="d-flex text-start align-items-center justify-content-center" style="background-color: #212529; height: auto; min-height: 100vh;">
+    <div class="page-content row" id="Home">
         <!-- <h1 class="display-4 h1-title text-warning mb-2"><strong>Davi Pinheiro de Souza</strong></h1>
         <p class="fs-3 text-light" id="funcs" style="height: 1em"><small></small></p> -->
-        <div style="max-width: 40em;">
-            <p class="text-light mb-0" style="font-family: Lexend; font-size: 20px;">Hello, I am</p>
-            <p class="text-light" style="font-family: Lexend; font-weight: 900; font-size: 50px;">DAVI P. DE SOUZA</p>
+        <div class="intro-template col-md-6">
+            <p class="intro mb-0">Hello, I am</p>
+            <p class="intro-name">Davi P. de Souza</p>
             <div>
-                <p class="text-warning mb-1" style="font-family: Lexend; font-size: 20px;">And I am a Web Developer</p>
-                <p class="text-light mb-0 opacity-50" style="font-family: Lexend; font-size: 15px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a neque turpis. Nam eu feugiat dolor. Sed nec hendrerit urna, nec fringilla odio. Duis nec orci justo. </p>
+                <p class="intro mb-1" style="color: var(--secondary-color);">I am a Web Developer</p>
+                <p class="intro-initials text-light mb-0">
+                    Sou apaixonado por tecnologia e desenvolvimento web, 
+                    Tenho experiência em front-end e back-end, 
+                    e estou sempre buscando aprender novas ferramentas e 
+                    linguagens para evoluir meus projetos. Meu objetivo é 
+                    transformar ideias em aplicações úteis e acessíveis. 
+                </p>
             </div>
         </div>
-        <div class="position-relative ms-5 mt-4">
-            <div style="width: 20em; height: 100%;">
-                <div class="bg-warning rounded-circle opacity-100 position-absolute translate-middle start-50" style="width: 20em; height: 20em; top: -10em;"></div>
-                <div class="bg-warning rounded-circle opacity-75  position-absolute translate-middle start-50" style="width: 20em; height: 20em; top: 0em;"></div>
-                <div class="bg-warning rounded-circle opacity-50  position-absolute translate-middle start-50" style="width: 20em; height: 20em; top: 10em;"></div>
-            </div>
+        <div class="intro-template balls col-md-6 position-relative mt-4">
+            <div class="intro-balls" id="ball3"></div>
+            <div class="intro-balls" id="ball2"></div>
+            <div class="intro-balls" id="ball1"></div>
         </div>
     </div>
 
-    <!-- Sobre -->
-    <div class="d-flex align-items-center justify-content-center p-5" style=" background-color: #212529;" id="Sobre">
-        <div class="row align-items-center justify-content-center">
-            <!-- Container da Foto -->
-            <div class="col-sm-4 m-5 tremidinha" data-anime= "up">
-                <!-- Foto -->
-                <img class="img-fluid rounded shadow" src="images/Me.jpeg" alt="Minha foto">
-            </div>
-            <!-- Container Infos -->
-            <div class="col-sm-4" data-anime= "up">
-                <!-- Titulo -->
-                <h2 class="text-warning mb-4">Sobre mim</h2>
-                <!-- Informações -->
-                <p class="text-light mb-4" style="text-align: justify;">Olá, me chamo Davi Pinheiro de Souza, tenho 22 anos e sou Desenvolvedor Web e Suporte em TI.
-                    Atualmente trabalho como Desenvolvedor Web com PHP e Bootstrap. Estou no quinto semestre de Engenharia de Software. Estudo JavaScript, PHP, Bootstrap, React JS, Java, C#, Springboot e MySQL para me aperfeiçoar cada vez mais na construção de sites e API's.
-                    Venho me interessando muito pela área de Inteligencia Artificial e Redes Neurais e pretendo estudar isso um pouco mais a fundo.</p>
-                <!-- Botão Curriculo -->
-                <a class="btn btn-outline-warning tremidinha" style="text-decoration: none;font-weight: 500;" href="file/CV_DaviPinheiroDeSouza.pdf" download="Curriculo_Davi" target="_blank">
-                    <!-- Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download mb-1 me-1" viewBox="0 0 16 16">
-                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                    </svg>
-                     Baixar CV
+    <div class="page-content row flex-column m-0" id="Sobre">
+
+        <div class="col-12 text-center mb-5" data-anime= "up">
+            <p class="intro-name mb-0" style="font-size: 30px;">
+                What about me?
+            </p>
+            <i>
+                <a class="download_cv disabled" href="file/CV_DaviPinheiroDeSouza.pdf" download="Curriculo_Davi" target="_blank">
+                    Download CV
                 </a>
+            </i>
+        </div>
+        <div class="col-12 row m-0 justify-content-center align-items-center mt-5" data-anime= "up">
+              
+            <div class="col-lg-4 topics" data-anime= "up">
+                <p class="topic-title">Who am I?</p>
+                <p class="intro-initials">
+                    I'm a web developer with a strong interest in back-end 
+                    technologies, currently working as a Support Analyst at 
+                    TOTVS and I’m a Software Engeneering Studant. I'm 
+                    passionate about solving real-world problems through 
+                    code and continuously improving my skills.
+                </p>
             </div>
+            
+            <div class="col-lg-4 topics" data-anime= "up">
+                <p class="topic-title">What do I do?</p>
+                <p class="intro-initials">
+                    I develop full-stack applications using technologies 
+                    like Java, MySQL, PHP, ADVPL, Angular, and a bit of Python. 
+                    I'm also exploring React and WebSockets, and I enjoy 
+                    building APIs and working on robust back-end logic. At 
+                    work, I’ve been learning ADVPL, TLPP, Angular, and PO 
+                    UI to support TOTVS systems.
+                </p>
+            </div>
+            
+            <div class="col-lg-4 topics" data-anime= "up">
+                <p class="topic-title">What are my goals?</p>
+                <p class="intro-initials">
+                    I'm focused on deepening my knowledge in back-end 
+                    development, especially in C# and architecture. I 
+                    also want to expand into cybersecurity and ethical 
+                    hacking in the future. My main goal is to become a 
+                    well-rounded developer who can create secure, scalable, 
+                    and efficient systems.
+                </p>
+            </div>
+
         </div>
     </div>
     
@@ -346,6 +370,8 @@
 
     <script src="js/OpcoesNav.js"></script>
     <script src="js/exibeOpcoes.js"></script>
+
+    <script src="js/script.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
