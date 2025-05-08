@@ -1,11 +1,12 @@
 
 :root{
-    --color-one: #3b3b3b;
-    --color-two: #f8f9fa;
-    --principal-color: #212529;
-    --secondary-color: #ffc107;
-    --auxiliar-color1: #cea014;
-    --auxiliar-color2: #9d7e21;
+    --color-one:        #3b3b3b;
+    --color-two:        #f8f9fa;
+    --principal-color:  #212529;
+    --secondary-color:  #ffc107;
+    --auxiliar-color1:  #cea014;
+    --auxiliar-color2:  #9d7e21;
+    --shadow:           #1c1c1c;
 
     --font-familly-one: Verdana;
     --font-weight-one: 500;
@@ -94,14 +95,45 @@ html, body{
 
 .topics{
 
-    padding: 0em 1em;
-    margin: 0em 2em;
+    padding: 2em 2em!important;
+    margin: 2em 2em;
     max-width: 20em!important;
-
+    min-height: 25em!important;
+    border-radius: 1em;
+    box-shadow: 0px 15px 15px 9px var(--shadow);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
 }
 
 .topics .topic-title{
     color: var(--secondary-color);
+}
+
+.topic-link{
+
+    text-decoration: none;
+    color: var(--color-two);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.topic-link-container{
+
+    width: 100%;
+    text-align: end;
+    margin-top: auto;
+
+}
+
+.topic-link > p{
+
+    display: inline;
+    margin: 0 .6em;
+
 }
 
 .download_cv{
